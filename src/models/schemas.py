@@ -35,3 +35,16 @@ class DomainAnalysisResult(BaseModel):
     uncertainty: float = Field(..., ge=0.0, le=1.0, description="The calculated uncertainty metric.")
     evidence_used: List[str] = Field(..., description="Strictly observed behaviors and statements used for scoring.")
     rationale: str = Field(..., description="Explanation tracing the classification to specific evidence.")
+
+class SufficiencyReason(str, Enum):
+    INSUFFICIENT_BEHAVIOR_EVENTS = "insufficient_behavior_events"
+    INSUFFICIENT_SELF_TALK = "insufficient_self_talk"
+    INSUFFICIENT_TEMPORAL_COVERAGE = "insufficient_temporal_coverage"
+    INSUFFICIENT_CONFIDENCE = "insufficient_confidence"
+    PASSED = "passed"
+
+class SufficiencyResult(BaseModel):
+    """Result of an evidence sufficiency gate evaluation."""
+    sufficient: bool = Field(..., description="Whether the evidence passed the sufficiency gate.")
+    reason: SufficiencyReason | None = Field(None, description="The reason for the evaluation outcome.")
+
