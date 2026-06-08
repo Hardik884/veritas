@@ -1,0 +1,16 @@
+[
+  {
+    "id": "b-001",
+    "description": "Completed a 5km run in 25 minutes.",
+    "timestamp": "2026-06-01T08:00:00Z",
+    "confidence": 0.95,
+    "intensity_score": 0.8
+  },
+  {
+    "id": "b-002",
+    "description": "Missed the scheduled team meeting.",
+    "timestamp": "2026-06-02T10:00:00Z",
+    "confidence": 0.85,
+    "intensity_score": -0.5
+  }
+]

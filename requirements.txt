@@ -1,0 +1,6 @@
+pydantic>=2.0.0
+sentence-transformers
+numpy
+scikit-learn
+hdbscan
+pytest

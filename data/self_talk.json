@@ -1,0 +1,14 @@
+[
+  {
+    "id": "t-001",
+    "text": "I am fully committed to my fitness goals this month.",
+    "timestamp": "2026-05-31T20:00:00Z",
+    "sentiment_score": 0.9
+  },
+  {
+    "id": "t-002",
+    "text": "I will definitely start being more punctual.",
+    "timestamp": "2026-06-03T09:00:00Z",
+    "sentiment_score": 0.7
+  }
+]
